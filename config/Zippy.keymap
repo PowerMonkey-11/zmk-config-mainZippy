@@ -29,8 +29,8 @@ As such, those are in use within the default layer at this time.*/
  // |  SHIFT |   Z    |   X    |   C    |   V    |   B    |  LBKT  |                    |  RBKT  |   N    |   M    |   ,    |   .    |   /    |  RET   |
                      bindings = <
 
-       &kp ESC    &kp Q   &kp W    &kp F    &kp P     &kp G     &kpLWIN            &kpCAPS     &kp J     &kp L     &kp U     &kp Y    &kp SEMI      &kp RALT
-       &kp TAB    &kp A   &kp R    &kp S    &kp T     &kp D     &kpLALT            &kpPSCRN    &kp H     &kp N     &kp E     &kp I    &kp O         &kp SQT
+       &kp ESC    &kp Q   &kp W    &kp F    &kp P     &kp G     &kp LEFT_WIN            &kp CAPS     &kp J     &kp L     &kp U     &kp Y    &kp SEMI      &kp RALT
+       &kp TAB    &kp A   &kp R    &kp S    &kp T     &kp D     &kp LALT            &kp PSCRN    &kp H     &kp N     &kp E     &kp I    &kp O         &kp SQT
        &kp LSHIFT &kp Z   &kp X    &kp C    &kp V     &kp B                                    &kp K     &kp M     &kp COMMA &kp DOT  &kp KP_SLASH  &kp DEL
                                             &mo LOWER &kp LCTRL &kp LBKT           &kp RBKT  &kp BSPC   &mo RAISE
                      >;
