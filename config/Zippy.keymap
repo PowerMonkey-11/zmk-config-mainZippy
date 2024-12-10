@@ -35,33 +35,32 @@ As such, those are in use within the default layer at this time.*/
                                             &mo LOWER &kp LCTRL &kp LBKT           &kp RBKT  &kp BSPC   &mo RAISE
                      >;
               };
-              lower_layer {
+                           lower_layer {
  // ---------------------------------------------------------------------------------------------------------------------------------
- // |      |      |      |      |      |      |      |                    |      |      |      |      |      |      |      |
- // |  ~   |  !   |  @   |  #   |  $   |  %   |      |                    |      |  ^   |  &   |  *   |  (   |  )   |      |
+ // |      |      |      |      |      |      |                                  |      |      |      |      |      |      |
+ // |  ~   |  !   |  @   |  #   |  $   |  %   |                                  |  ^   |  &   |  *   |  (   |  )   |      |
  // |      |      |      |      |      |      |                                  |      |  _   |  +   |  {   |  }   | PIPE |
  // |      |      |      |      |      |      |  (   |                    |  )   |      |      |      | HOME | END  |      |
+ // |      |      |      |      |      |      |      |                    |      |      |      |      |      |      |      |
                      bindings = <
-
-       &kp ESC    &trans   &trans    &trans    &trans  &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans   &kp RALT
-       &kp TAB    &trans   &trans    &trans    &trans  &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans   &kp SQT
-       &kp LSHIFT &trans   &trans    &trans    &trans  &trans                            &trans     &trans     &trans     &trans     &trans  &kp DEL
-                                               &trans &kp LCTRL &kp LBKT          &kp RBKT  &kp BSPC   &trans   
+       &trans    &trans   &trans &trans   &trans   &trans      &kpLWIN            &kpCAPS     &trans    &trans    &trans    &trans   &trans   &trans
+       &kp TILDE &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT     &kpLALT            &kpPSCRN    &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &trans
+       &trans    &trans   &trans &trans   &trans   &trans                             &trans    &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE
+                                          &trans   &trans    &kp LPAR        &kp RPAR &trans    &trans  
                      >;
               };
               raise_layer {
-
  // ---------------------------------------------------------------------------------------------------------------------------------
- // |       |       |       |       |       |       |       |                    |       |       |       |       |       |       |       |
- // |   `   |   1   |   2   |   3   |   4   |   5   |       |                    |       |   6   |   7   |   8   |   9   |   0   |  DEL  |
+ // |       |       |       |       |       |       |                                    |       |       |       |       |       |       |
+ // |   `   |   1   |   2   |   3   |   4   |   5   |                                    |   6   |   7   |   8   |   9   |   0   |  DEL  |
  // |       |  F1   |  F2   |  F3   |  F4   |  F5   |                                    |  F6   |   -   |   =   |   [   |   ]   |   \   |
  // |       |  F7   |  F8   |  F9   |  F10  |  F11  |       |                    |       |  F12  |       | PSCRN | PG_DN | PG_UP |       |
+ // |       |       |       |       |       |       |       |                    |       |       |       | NEXT  | VOL-  | VOL+  | PLAY  |
                      bindings = <
-       &kp ESC    &trans   &trans    &trans    &trans  &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans   &kp RALT
-       &kp TAB    &trans   &trans    &trans    &trans  &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans   &kp SQT
-       &kp LSHIFT &trans   &trans    &trans    &trans  &trans                            &trans     &trans     &trans     &trans     &trans  &kp DEL
-                                               &trans &kp LCTRL &kp LBKT          &kp RBKT  &kp BSPC   &trans   
-
+       &trans    &trans &trans &trans &trans  &trans     &kpLWIN            &kpCAPS      &trans  &trans    &trans     &trans       &trans       &trans
+       &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4  &kp N5     &kpLALT            &kpPSCRN     &kp N6  &kp N7    &kp N8     &kp N9       &kp N0       &kp DEL
+       &trans    &kp F1 &kp F2 &kp F3 &kp F4  &kp F5                                      &kp F6  &kp MINUS &kp EQUAL  &kp LBKT     &kp RBKT     &kp BSLH
+                                       &kp F10 &kp F11 &trans                  &trans &kp F12 &trans   
                      >;
               };
        };
