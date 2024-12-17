@@ -1,0 +1,14 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config SHIELD_Zippy2_CENTRAL_DONGLE
+	def_bool $(shields_list_contains,Zippy2_central_dongle)
+
+config SHIELD_Zippy2_CENTRAL_LEFT
+    def_bool $(shields_list_contains,Zippy2_central_left)
+
+config SHIELD_Zippy2_PERIPHERAL_LEFT
+    def_bool $(shields_list_contains,Zippy2_peripheral_left)
+
+config SHIELD_Zippy2_PERIPHERAL_RIGHT
+    def_bool $(shields_list_contains,Zippy2_peripheral_right)
